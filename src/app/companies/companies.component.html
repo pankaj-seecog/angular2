@@ -1,0 +1,40 @@
+<div class="row">
+<div class="col-lg-6">
+<div *ngFor="let x of companies">
+<app-company [info]="x" (fireDetail)="displayDetail($event)"></app-company>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="detaildiv">
+<p>
+<img src="{{company.logo}}" width="200" height="200" margin="left">{{company}} 
+</p>
+<p>
+{{company.nm}}
+</p>
+</div>
+</div>
+</div>
+<!--<p>
+  Name : <input [(ngModel)]="company.nm">
+</p>
+<p>
+  Logo : <input [(ngModel)]="company.logo">
+</p>
+<p>
+  Type : <input [(ngModel)]="company.type">
+</p>
+<p>
+  Employees : <input [(ngModel)]="company.nos">
+</p>
+<p>
+  Corporate Office : <input [(ngModel)]="company.add">
+</p>
+<p>
+  <button (click)="saveCompany()">Save</button>
+</p>
+
+<p>
+  {{companies | json}}
+</p>
+-->

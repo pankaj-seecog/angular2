@@ -1,0 +1,11 @@
+<p>
+  employee : <input [(ngModel)]="employee.nm">
+</p>
+<p>
+  <button (click)="saveEmployee()">Save</button>
+  <button (click)="deleteEmployee()">Delete</button>
+</p>
+
+<p>
+  {{employees | json}}
+</p>
